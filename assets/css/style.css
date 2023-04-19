@@ -3,13 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body{
-    background-image: url(./../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Montserrat;
-}
-
 .search {
     width: 600px;
     border-bottom: 1px solid #000000;
@@ -35,83 +28,28 @@ body{
     display: flex;
     gap: 18px;
 }
-
-
-
-
-
-
-.cards {
+#cards{
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
-    width: 100%;
-    justify-content: center;
-    width: 100%;
-    padding: 0px 128px;
-    margin-top: 33px;
-    margin-bottom: 30px;
-    padding: 30px;
+    justify-content: space-around;
+    margin-top: 5rem;
 }
-
-.cards .card {
-    background: #94909051;
-    box-shadow: 0px 4px 20px rgba(40, 40, 40, 0.15);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-
-
-
-.cards .card .containt .details .first-row {
-    display: flex;
-    justify-content: space-between;
-    width: 230px;
-    margin-top: 32px;
-}
-
-.cards .card .containt .images .first-row  {
-    display: flex;
-    gap: 10px;
-
-}
-.cards .card .containt .images .second-row  {
-    display: flex;
-    gap: 10px;
-
-}
-
-.cards .card .containt  p , div {
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
-    color: #1e1d1d;
-    margin-bottom: 10px;
-
-
-}
-.cards .card .containt  p span{
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
-    color: #267035;
-}
-
-
-
-.cards .card .containt button {
-
-    width: 100%;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 700;
+.card{
     text-align: center;
-    color: #FFFFFF;
-    background: #282828;
-
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 4px 3px palevioletred;
+    border-radius: 10px;
+}
+.title{
+    font-size: 15px;
+}
+.images{
+    width: 80%;
+}
+.category, .price{
+font-weight:bold;
+text-transform: capitalize;
+margin: 8px;
+font-size: 1.2rem;
 }
