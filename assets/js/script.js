@@ -1,7 +1,9 @@
-fetch('https://dummyjson.com/products').then(res => (res.json())).then((res) => {
+fetch('https://dummyjson.com/products').then(res =>(res.json())) .then((res) => {
     let data1="";
-    res.map((values)=>{
-        data1+=` <div class="card">
+    data1= res.products;
+    let data2="";
+    data1.map((values)=>{
+        data2+=` <div class="card">
         <h1 class="title">${values.title}</h1>
         <img src=${values.images}
             alt="image" class="images">
@@ -9,12 +11,15 @@ fetch('https://dummyjson.com/products').then(res => (res.json())).then((res) => 
         <p class="category">${values.category}</p>
         <p class="price">${values.price}</p>
     </div>`
+    
+    // console.log(data1);
 
     });
-    document.getElementById("cards").innerHTML= data1;
+    document.getElementById("cards").innerHTML= data2;
 
 
-}).catch((err) => {
+}) 
+.catch((err) => {
     console.log(err);
 })
 
