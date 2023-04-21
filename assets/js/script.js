@@ -5,11 +5,17 @@ fetch('https://dummyjson.com/products').then(res =>(res.json())) .then((res) => 
     data1.map((values)=>{
         data2+=` <div class="card">
         <h1 class="title">${values.title}</h1>
-        <img src=${values.images}
+        <img src=${values.images[0]}
             alt="image" class="images">
         <p>${values.description}</p>
         <p class="category">${values.category}</p>
         <p class="price">${values.price}</p>
+        <p class="discountPercentage">${values.discountPercentage}</p>
+        <p class="id">${values.id }</p>
+        <p class="rating">${values.rating}</p>
+        <p class="stock">${values.stock}</p>
+        <p class="thumbnail">${values.thumbnail}</p>
+        <p class="brand">${values.brand}</p>
     </div>`
     
     // console.log(data1);
